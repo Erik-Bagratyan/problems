@@ -7,6 +7,11 @@
 
 using namespace std;
 
+bool myFunction(const pair<int, string>& num1, const pair<int, string>& num2)
+{
+	return (num1 > num2);
+}
+
 int main()
 {
 	map<string, int> mp;
@@ -28,14 +33,14 @@ int main()
 	}
 	fin.close();
 
-	vector<pair<int, string>> vec(mp.size());
+	vector<pair<int, string>> vec);
 	for (map<string, int>::const_iterator it = mp.begin(); it != mp.end(); ++it)
 	{
 		vec.push_back({ it->second,it->first });
 	}
-	sort(vec.begin(), vec.end());
+	sort(vec.begin(), vec.end(),myFunction);
 	int hachax_krknvox_bareri_qanak = 100;
-	for (int i = vec.size() - 1, j = 0; j < hachax_krknvox_bareri_qanak; --i, j++)
+	for (int i = 0; i < hachax_krknvox_bareri_qanak; ++i)
 	{
 		cout << vec[i].first << " : " << vec[i].second << endl;
 	}
